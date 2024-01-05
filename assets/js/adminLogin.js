@@ -5,7 +5,7 @@ function adminLogin() {
     adminInputs[0].value.toLowerCase() == "ahmed@gmail.com" &&
     adminInputs[1].value.toLowerCase() == "123"
   ) {
-    window.location.replace("../../admin.html");
+    window.location.replace("admin.html");
   } else if (adminArr) {
     adminArr.forEach((element) => {
       if (
