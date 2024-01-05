@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Font Awsome-->
+    <link rel="stylesheet" href="./assets/vendor/fonts/all.min.css" />
+    <!--Bootstrap-->
+    <link
+      rel="stylesheet"
+      href="./assets/vendor/bootstrap-5.0.2-dist/css/bootstrap.min.css"
+    />
+    <!--Icon of the page-->
+    <link rel="icon" href="./assets/img/landing.png" type="image/x-icon" />
+    <!--Css file-->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Admin</title>
+  </head>
+  <body class="bg-dark">
+    <div class="container my-5">
+      <div class="row align-items-center">
+        <div class="col-md-6 col-12 mb-3 mb-md-0">
+          <div class="img">
+            <img
+              src="./assets/img/Login-page-character1.png"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="col-md-6 col-12">
+          <div class="card">
+            <div class="card-body">
+              <div class="mb-3">
+                <label for="adminMail" class="form-label">Email address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="adminMail"
+                  placeholder="name@example.com"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="adminPassword" class="form-label">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="adminPassword"
+                />
+              </div>
+              <div class="btns d-flex justify-content-between">
+                <button class="btn btn-outline-success" onclick="adminLogin()">
+                  Login
+                </button>
+                <a href="./index.html" class="btn btn-outline-success">Home</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/vendor/bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+    <script src="./assets/js/adminLogin.js"></script>
+  </body>
+</html>

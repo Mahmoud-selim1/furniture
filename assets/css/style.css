@@ -1,0 +1,179 @@
+/**/
+
+/**/
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.margin-sm {
+    margin-left: -32px;
+}
+/*
+make burger icon smaller
+*/
+.small-sm {
+    font-size: 10px;
+    padding: 5px;
+}
+header .navbar {
+    background-color: white !important;
+}
+.navbar-brand {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+}   
+.navbar-nav li {
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+/*===========Landing Section=================*/
+.landing {
+    margin-top: 250px;
+}
+
+.landing .text h1 {
+    font-size: 4.5rem;
+    color: rgb(1 80 133);
+}
+.landing .text p {
+    font-size: 1.5rem;
+    color: rgb(1 80 133 / 72%);
+}
+@media (max-width:992px) {
+    .landing .text h1 {
+        font-size: 2rem;
+        
+    }
+    .landing .text p {
+        font-size: 1.2rem;
+    }
+}
+@media (max-width:768px) {
+    .landing .text  {
+        text-align: center;
+        margin-bottom: 20px;
+        
+    }
+    .landing .image {
+        padding: 20px;
+    }
+}
+/*===============Footer Section==============*/
+footer {
+    background-color: #251c1c;
+    padding: 40px ;
+}
+footer.mt-5 {
+    margin-top: 8rem!important;
+}
+footer h2 {
+    color: rgb(255, 255, 240);
+    font-size: 1.5rem;
+}
+footer li {
+    color: rgb(255, 255, 240);
+    margin-bottom: 8px;
+    font-size: 0.8rem;
+}
+footer .image {
+    padding: 30px;
+    background-color: #5b5554;
+    border: 15px solid rgb(255, 255, 240);
+}
+/*================Login & Registeraton===============*/
+main.register,
+main.login {
+    margin-top: 250px;
+}
+main.register .container-sm,
+main.login .container-sm {
+    border: 7px solid #251c1c;
+    padding: 50px;
+    border-radius: 10px;
+    background: #342c35;
+    color: white;
+}
+/*==========Products Page==============*/
+.form-check-label,
+.form-check-input {
+    cursor: pointer;
+}
+main.product .card,
+section.cart .card {
+   position: relative;
+   border: none;
+   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+   padding: 10px;
+   border-radius: 15px;
+   -webkit-border-radius: 15px;
+   -moz-border-radius: 15px;
+   -ms-border-radius: 15px;
+   -o-border-radius: 15px;
+}
+main.product .card::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    background: #000000bd;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+main.product .card::after {
+    position: absolute;
+    font-family: 'Font Awesome 5 Free';
+    content: '\f217';
+    font-weight: 900;
+    color: white;
+    font-size: 40px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    cursor: pointer;
+}
+main.product .hov:hover .card::before {
+    height: 69%;
+}
+main.product .hov:hover .card::after {
+    opacity: 1;
+}
+/*================Admin Page================*/
+.hideTable {
+    opacity: 0;
+    height: 0;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.showTable {
+    opacity: 1;
+    
+}
+main.admin  .tableInfo  {
+    max-width: 100%;
+    overflow-x: scroll;
+}
