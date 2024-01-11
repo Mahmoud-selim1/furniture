@@ -99,9 +99,9 @@ let addAdmins = () => {
 };
 // show all users in table
 function showUsers() {
-  (tbody[1].innerHTML = ""),
-    usersArr.forEach((element, id) => {
-      tbody[1].innerHTML += `
+  tbody[1].innerHTML = "";
+  usersArr.forEach((element, id) => {
+    tbody[1].innerHTML += `
         <tr>
             <td>${id + 1}</td>
             <td>${element.username}</td>
@@ -109,7 +109,7 @@ function showUsers() {
         </tr>
         
         `;
-    });
+  });
 }
 // show product table
 let showProductTable = () => {

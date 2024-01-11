@@ -45,17 +45,42 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link active" href="./cart.html"
-                  >Cart <i class="fa-solid fa-cart-shopping"></i
-                ></a>
+                  >Cart
+                  <i class="fa-solid fa-cart-shopping"
+                    ><sup
+                      id="cartCount"
+                      style="
+                        background-color: red;
+                        border-radius: 50%;
+                        color: white;
+                        border-radius: 27%;
+                        font-size: 15px;
+                        padding: 4px;
+                      "
+                      >0</sup
+                    ></i
+                  ></a
+                >
               </li>
             </ul>
-            <ul class="ms-lg-3 mb-2 mb-lg-0">
-              <a href="./assets/access/login.html" class="btn btn-success me-2"
-                >Login</a
-              >
-              <a href="./assets/access/register.html" class="btn btn-dark"
-                >Register</a
-              >
+            <ul class="ms-lg-4 mb-2 mb-lg-0">
+              <div class="access">
+                <a
+                  href="./assets/access/login.html"
+                  class="btn btn-success me-2"
+                  >Login</a
+                >
+                <a
+                  href="./assets/access/register.html"
+                  class="btn btn-dark me-2"
+                  >Register</a
+                >
+              </div>
+              <div>
+                <a href="./adminLogin.html" class="btn btn-outline-danger"
+                  >Admin</a
+                >
+              </div>
             </ul>
           </div>
         </div>
@@ -64,61 +89,13 @@
     <main>
       <section class="cart">
         <div class="container">
-          <div class="row mb-4" id="cartItems">
-            <div class="card mb-3">
-              <div class="row g-0 align-items-center">
-                <div class="col-md-4 col-12">
-                  <img
-                    src="https://www.ikea.com/eg/en/images/products/lack-side-table-white-stained-oak-effect__0411514_pe570468_s5.jpg?f=s"
-                    class="img-fluid"
-                    alt="..."
-                  />
-                </div>
-                <div class="col-md-6 p-5 col-8">
-                  <h5 class="card-title">LACK</h5>
-                  <p class="card-text">
-                    Side table, white stained oak effect, 55x55 cm
-                  </p>
-                </div>
-                <div class="col-md-2 col-4">
-                  <div class="btns d-flex flex-column align-items-center">
-                    <button class="btn btn-info">+</button>
-                    <div class="price">1000E£</div>
-                    <button class="btn btn-info">-</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row mb-4" id="cartItems">
-            <div class="card mb-3">
-              <div class="row g-0 align-items-center">
-                <div class="col-md-4 col-12">
-                  <img
-                    src="https://www.ikea.com/eg/en/images/products/lack-side-table-white-stained-oak-effect__0411514_pe570468_s5.jpg?f=s"
-                    class="img-fluid"
-                    alt="..."
-                  />
-                </div>
-                <div class="col-md-6 p-5 col-8">
-                  <h5 class="card-title">LACK</h5>
-                  <p class="card-text">
-                    Side table, white stained oak effect, 55x55 cm
-                  </p>
-                </div>
-                <div class="col-md-2 col-4">
-                  <div class="btns d-flex flex-column align-items-center">
-                    <button class="btn btn-info">+</button>
-                    <div class="price">1000E£</div>
-                    <button class="btn btn-info">-</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div class="row mb-4" id="cartItems"></div>
+
           <div class="row">
             <div class="card p-3">
-              <h2 class="text-end text-success">Total: E£1000</h2>
+              <h2 class="text-end text-success">
+                Total: E£ <span id="total">1000</span>
+              </h2>
             </div>
           </div>
         </div>
@@ -167,5 +144,6 @@
     </footer>
     <script src="./assets/vendor/bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
     <script src="./assets/js/cart.js"></script>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>

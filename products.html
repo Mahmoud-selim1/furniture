@@ -44,18 +44,43 @@
                 <a class="nav-link active" href="./products.html">Products</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./cart.html"
-                  >Cart <i class="fa-solid fa-cart-shopping"></i
-                ></a>
+                <a class="nav-link active" href="./cart.html"
+                  >Cart
+                  <i class="fa-solid fa-cart-shopping"
+                    ><sup
+                      id="cartCount"
+                      style="
+                        background-color: red;
+                        border-radius: 50%;
+                        color: white;
+                        border-radius: 27%;
+                        font-size: 15px;
+                        padding: 4px;
+                      "
+                      >0</sup
+                    ></i
+                  ></a
+                >
               </li>
             </ul>
-            <ul class="ms-lg-3 mb-2 mb-lg-0">
-              <a href="./assets/access/login.html" class="btn btn-success me-2"
-                >Login</a
-              >
-              <a href="./assets/access/register.html" class="btn btn-dark"
-                >Register</a
-              >
+            <ul class="ms-lg-4 mb-2 mb-lg-0">
+              <div class="access">
+                <a
+                  href="./assets/access/login.html"
+                  class="btn btn-success me-2"
+                  >Login</a
+                >
+                <a
+                  href="./assets/access/register.html"
+                  class="btn btn-dark me-2"
+                  >Register</a
+                >
+              </div>
+              <div>
+                <a href="./adminLogin.html" class="btn btn-outline-danger"
+                  >Admin</a
+                >
+              </div>
             </ul>
           </div>
         </div>
@@ -308,5 +333,6 @@
 
     <script src="./assets/vendor/bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
     <script src="./assets/js/product.js"></script>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
